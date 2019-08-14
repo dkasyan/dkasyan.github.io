@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 
 
 html {
@@ -13,4 +14,9 @@ html {
 body {
   color: $yellow;
   background: $violet;
+  font-family: 'Poppins';
 }
+
+
+
+
