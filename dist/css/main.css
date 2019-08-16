@@ -308,6 +308,16 @@ template {
 [hidden] {
   display: none; }
 
+.hero {
+  max-width: 1184px;
+  padding: 112px 0 200px;
+  margin: 0 auto; }
+  .hero_image {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: #171F37 solid 4px; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }

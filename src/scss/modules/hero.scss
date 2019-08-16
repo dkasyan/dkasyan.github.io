@@ -1,0 +1,11 @@
+.hero{
+    max-width: 1184px;
+    padding: 112px 0 200px;
+    margin: 0 auto;
+    &_image{
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        border: $big-stone solid 4px;
+    }
+}
