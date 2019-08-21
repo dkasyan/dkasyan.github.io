@@ -344,6 +344,42 @@ template {
     padding-bottom: 8px;
     border-bottom: 2px solid #0593FB; }
 
+.skills {
+  max-width: 1184px;
+  margin: 0 auto; }
+  .skills_title {
+    font-size: 2.25rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    padding: 1rem 0;
+    border-bottom: 2px solid #E5E8EC; }
+
+.skills-list {
+  display: -ms-grid;
+  display: grid;
+  padding: 8rem 0;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; }
+  .skills-list_list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
+  .skills-list_title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0; }
+    .skills-list_title::before {
+      content: '';
+      width: 80px;
+      height: 4px;
+      display: block;
+      background: red;
+      border-radius: 8px;
+      margin-bottom: 1.5rem; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
