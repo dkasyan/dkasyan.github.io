@@ -14,9 +14,25 @@
     display: grid;
     padding: 8rem 0;
     grid-template-columns: 1fr 1fr;
+    &_item{
+        color: $gray;
+        &::before {
+          content: '';
+          display: block;
+          width: 18px;
+          height: 18px;
+          background: url('../assets/img/checkcircleb.svg');
+
+        }
+    }
     &_list{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+        padding: 0;
+        margin: calc(1.5rem + 4px );
+        column-gap: 1.5rem;
+
 
     }
     &_title{

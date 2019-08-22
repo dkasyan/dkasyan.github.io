@@ -361,11 +361,25 @@ template {
   padding: 8rem 0;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr; }
+  .skills-list_item {
+    color: #52606D; }
+    .skills-list_item::before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      background: url("../assets/img/checkcircleb.svg"); }
   .skills-list_list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+    margin: calc(1.5rem + 4px);
+    -webkit-column-gap: 1.5rem;
+       -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem; }
   .skills-list_title {
     font-weight: 600;
     font-size: 32px;
