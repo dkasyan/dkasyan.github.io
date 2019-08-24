@@ -310,7 +310,7 @@ template {
 
 .hero {
   max-width: 1184px;
-  padding: 112px 0 200px;
+  padding: 112px 0 200px 112px;
   margin: 0 auto; }
   .hero_description {
     color: #52606D;
@@ -318,7 +318,8 @@ template {
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 2.25rem;
-    max-width: 780px; }
+    max-width: 780px;
+    margin-bottom: 3.75rem; }
   .hero_image {
     width: 120px;
     height: 120px;
@@ -335,6 +336,77 @@ template {
     line-height: 3.5rem;
     max-width: 780px;
     margin: 2rem 0 1rem; }
+  .hero_mail {
+    color: #0593FB;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0593FB; }
+
+.skills {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 112px; }
+  .skills_title {
+    font-size: 2.25rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    padding: 1rem 0;
+    border-bottom: 2px solid #E5E8EC; }
+
+.skills-list {
+  display: -ms-grid;
+  display: grid;
+  padding: 8rem 0 0;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; }
+  .skills-list_item {
+    color: #52606D;
+    padding: 11px 0 11px 30px;
+    position: relative; }
+    .skills-list_item::before {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      background: url("../assets/img/checkcircleg.svg"); }
+      .skills-list--blue .skills-list_item::before {
+        background: url("/assets/img/checkcircleb.svg"); }
+      .skills-list--violet .skills-list_item::before {
+        background: url("/assets/img/checkcirclev.svg"); }
+  .skills-list_list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+    margin: calc(1.5rem + 4px);
+    -webkit-column-gap: 1.5rem;
+       -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem; }
+  .skills-list_title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0; }
+    .skills-list_title::before {
+      content: '';
+      width: 80px;
+      height: 4px;
+      display: block;
+      background: #06C847;
+      border-radius: 8px;
+      margin-bottom: 1.5rem; }
+      .skills-list--blue .skills-list_title::before {
+        background: #2251CC; }
+      .skills-list--violet .skills-list_title::before {
+        background: #653CAD; }
 
 html {
   -webkit-box-sizing: border-box;
