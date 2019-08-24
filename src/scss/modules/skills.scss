@@ -16,7 +16,12 @@
     grid-template-columns: 1fr 1fr;
     &_item{
         color: $gray;
+        padding-left: 22px;
+        position: relative;        
         &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
           content: '';
           display: block;
           width: 18px;

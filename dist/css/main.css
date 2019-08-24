@@ -362,8 +362,13 @@ template {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr; }
   .skills-list_item {
-    color: #52606D; }
+    color: #52606D;
+    padding-left: 22px;
+    position: relative; }
     .skills-list_item::before {
+      position: absolute;
+      top: 0;
+      left: 0;
       content: '';
       display: block;
       width: 18px;
