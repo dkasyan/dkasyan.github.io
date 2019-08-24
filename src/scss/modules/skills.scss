@@ -1,6 +1,7 @@
 .skills{
     max-width: 1184px;
     margin: 0 auto;
+    padding: 112px;
     &_title{
         font-size: 2.25rem;
         margin: 0;
@@ -12,21 +13,27 @@
 }
 .skills-list{
     display: grid;
-    padding: 8rem 0;
+    padding: 8rem 0 0;
     grid-template-columns: 1fr 1fr;
     &_item{
         color: $gray;
-        padding-left: 22px;
-        position: relative;        
+        padding: 11px 0 11px 30px;
+        position: relative;       
         &::before {
           position: absolute;
-          top: 0;
+          top: 10px;
           left: 0;
           content: '';
           display: block;
           width: 18px;
           height: 18px;
-          background: url('../assets/img/checkcircleb.svg');
+          background: url('../assets/img/checkcircleg.svg');
+          .skills-list--blue & {
+              background: url('/assets/img/checkcircleb.svg');
+          }
+          .skills-list--violet & {
+            background: url('/assets/img/checkcirclev.svg');            
+          }
 
         }
     }
@@ -53,7 +60,15 @@
             background: $green;
             border-radius: 8px;
             margin-bottom: 1.5rem;
-        }      
+            .skills-list--blue & {
+                background: $dark-blue;
+            }
+            .skills-list--violet & {
+                background: $violet;            
+              }
+        }
+
+
     }
 
 }

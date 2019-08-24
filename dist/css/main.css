@@ -310,7 +310,7 @@ template {
 
 .hero {
   max-width: 1184px;
-  padding: 112px 0 200px;
+  padding: 112px 0 200px 112px;
   margin: 0 auto; }
   .hero_description {
     color: #52606D;
@@ -346,7 +346,8 @@ template {
 
 .skills {
   max-width: 1184px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 112px; }
   .skills_title {
     font-size: 2.25rem;
     margin: 0;
@@ -358,22 +359,26 @@ template {
 .skills-list {
   display: -ms-grid;
   display: grid;
-  padding: 8rem 0;
+  padding: 8rem 0 0;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr; }
   .skills-list_item {
     color: #52606D;
-    padding-left: 22px;
+    padding: 11px 0 11px 30px;
     position: relative; }
     .skills-list_item::before {
       position: absolute;
-      top: 0;
+      top: 10px;
       left: 0;
       content: '';
       display: block;
       width: 18px;
       height: 18px;
-      background: url("../assets/img/checkcircleb.svg"); }
+      background: url("../assets/img/checkcircleg.svg"); }
+      .skills-list--blue .skills-list_item::before {
+        background: url("/assets/img/checkcircleb.svg"); }
+      .skills-list--violet .skills-list_item::before {
+        background: url("/assets/img/checkcirclev.svg"); }
   .skills-list_list {
     display: -ms-grid;
     display: grid;
@@ -395,9 +400,13 @@ template {
       width: 80px;
       height: 4px;
       display: block;
-      background: red;
+      background: #06C847;
       border-radius: 8px;
       margin-bottom: 1.5rem; }
+      .skills-list--blue .skills-list_title::before {
+        background: #2251CC; }
+      .skills-list--violet .skills-list_title::before {
+        background: #653CAD; }
 
 html {
   -webkit-box-sizing: border-box;
