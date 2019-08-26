@@ -408,6 +408,9 @@ template {
       .skills-list--violet .skills-list_title::before {
         background: #653CAD; }
 
+.project {
+  background: #F5F7FA; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
