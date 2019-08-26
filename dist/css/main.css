@@ -346,7 +346,7 @@ template {
 
 .skills {
   max-width: 1184px;
-  margin: 0 auto;
+  margin: 0 auto 8rem;
   padding: 112px; }
   .skills_title {
     font-size: 2.25rem;
@@ -410,6 +410,21 @@ template {
 
 .project {
   background: #F5F7FA; }
+  .project_description {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    color: gray;
+    max-width: 580px; }
+  .project_title {
+    font-family: Popins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    max-width: 1184px; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -424,5 +439,9 @@ body {
   background: #fff;
   font-family: 'Poppins';
   border: 16px solid #171F37; }
+
+.container {
+  max-width: 1184px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
