@@ -426,6 +426,19 @@ template {
     padding: 1rem 0;
     max-width: 1184px; }
 
+.projects_list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
