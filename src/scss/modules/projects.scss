@@ -6,6 +6,7 @@
         line-height: 2.25rem;
         color: gray;
         max-width: 580px;
+        padding: 0 2rem;
     }
     &_title{
         font-family: Popins;
@@ -28,7 +29,7 @@
     column-gap: 1.5rem;
     row-gap: 1.5rem;
     margin: 0;
-    padding: 0;
+    padding: 40px;
     list-style-type: none;
     &_item{
         background: #ffff;
@@ -37,9 +38,14 @@
         padding: 3rem;
         &_Container{
             padding: 3rem;
-
         }
     }
+    &_footer{
+        background: pink;
+        padding: 1rem 3rem;
+        text-align: right;     
+    }
+    
 
 
 }

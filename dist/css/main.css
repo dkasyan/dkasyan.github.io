@@ -415,7 +415,8 @@ template {
     font-size: 1.25rem;
     line-height: 2.25rem;
     color: gray;
-    max-width: 580px; }
+    max-width: 580px;
+    padding: 0 2rem; }
   .project_title {
     font-family: Popins;
     font-style: normal;
@@ -436,7 +437,7 @@ template {
           column-gap: 1.5rem;
   row-gap: 1.5rem;
   margin: 0;
-  padding: 0;
+  padding: 40px;
   list-style-type: none; }
   .projects_list_item {
     background: #ffff;
@@ -446,6 +447,10 @@ template {
     padding: 3rem; }
     .projects_list_item_Container {
       padding: 3rem; }
+  .projects_list_footer {
+    background: pink;
+    padding: 1rem 3rem;
+    text-align: right; }
 
 html {
   -webkit-box-sizing: border-box;
