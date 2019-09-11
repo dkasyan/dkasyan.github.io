@@ -448,9 +448,15 @@ template {
     .projects_list_item_Container {
       padding: 3rem; }
   .projects_list_footer {
-    background: pink;
+    background: #F5F7FA;
     padding: 1rem 3rem;
     text-align: right; }
+    .projects_list_footer_link {
+      color: #0593FB;
+      font-weight: 500;
+      font-size: 18px;
+      text-decoration: none;
+      line-height: 32px; }
 
 html {
   -webkit-box-sizing: border-box;

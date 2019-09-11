@@ -41,9 +41,17 @@
         }
     }
     &_footer{
-        background: pink;
+        background: $light-gray;
         padding: 1rem 3rem;
-        text-align: right;     
+        text-align: right;
+        &_link{
+            color: $blue;
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration: none;
+            line-height: 32px;
+
+        }     
     }
     
 
