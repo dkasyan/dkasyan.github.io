@@ -35,13 +35,13 @@
         background: #ffff;
         box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09 );
         border-radius: 8px;
-        padding: 3rem;
         &_Container{
             padding: 3rem;
         }
     }
     &_footer{
         background: $light-gray;
+        display: flex;
         padding: 1rem 3rem;
         text-align: right;
         &_link{
@@ -50,7 +50,6 @@
             font-size: 18px;
             text-decoration: none;
             line-height: 32px;
-
         }     
     }
     

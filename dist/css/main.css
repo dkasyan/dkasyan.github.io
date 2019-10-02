@@ -443,12 +443,14 @@ template {
     background: #ffff;
     -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
             box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-    border-radius: 8px;
-    padding: 3rem; }
+    border-radius: 8px; }
     .projects_list_item_Container {
       padding: 3rem; }
   .projects_list_footer {
     background: #F5F7FA;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 1rem 3rem;
     text-align: right; }
     .projects_list_footer_link {
