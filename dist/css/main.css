@@ -503,6 +503,26 @@ template {
         height: 24px;
         background: url("../assets/img/DemoIcon.svg"); }
 
+.contact {
+  background: #171F37;
+  color: #fff;
+  display: block; }
+  .contact_title {
+    font-size: 2.25rem;
+    margin: 0 1rem 1rem;
+    font-style: normal;
+    font-weight: 600;
+    padding: 8rem 0;
+    max-width: 118px; }
+    .contact_title::before {
+      content: '';
+      width: 80px;
+      height: 4px;
+      display: block;
+      background: #0593FB;
+      border-radius: 8px;
+      margin-bottom: 1.5rem; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
