@@ -509,11 +509,10 @@ template {
   display: block; }
   .contact_title {
     font-size: 2.25rem;
-    margin: 0 1rem 1rem;
+    margin: 0 auto 1rem;
     font-style: normal;
     font-weight: 600;
-    padding: 8rem 0;
-    max-width: 118px; }
+    padding: 8rem 0 0; }
     .contact_title::before {
       content: '';
       width: 80px;
@@ -522,6 +521,18 @@ template {
       background: #0593FB;
       border-radius: 8px;
       margin-bottom: 1.5rem; }
+    .contact_title_description {
+      margin: 0 1rem; }
+
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .social_item + .social_item {
+    margin-left: 1.5rem; }
 
 html {
   -webkit-box-sizing: border-box;
