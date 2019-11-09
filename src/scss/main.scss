@@ -10,6 +10,9 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  @media (max-width: $mobile) {
+    font-size: 12px;
+  }
 }
 
 *, *:before, *:after {
@@ -21,12 +24,17 @@ body {
   background: #fff;
   font-family: 'Poppins';
   border: 16px solid $big-stone;
+  @media (max-width: $mobile) {
+    border: none;
+  }
  // -webkit-font-smoothing antialiased;
  // -moz-osx-ffont-smoothing: grayscale;
+ 
 }
 
 .container{
-  max-width: 1184px;
+  max-width: 1216px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 

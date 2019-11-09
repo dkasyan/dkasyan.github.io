@@ -1,7 +1,7 @@
 .skills{
-    max-width: 1184px;
+    max-width: 1216px;
     margin: 0 auto 8rem;
-    padding: 112px;
+    padding: 112px 16px;
     &_title{
         font-size: 2.25rem;
         margin: 0;
@@ -9,12 +9,19 @@
         font-weight: 600;
         padding: 1rem 0;
         border-bottom: 2px solid #E5E8EC;
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
     }
 }
 .skills-list{
     display: grid;
     padding: 8rem 0 0;
     grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+    }
     &_item{
         color: $gray;
         padding: 11px 0 11px 30px;
@@ -39,7 +46,7 @@
     }
     &_list{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         list-style-type: none;
         padding: 0;
         margin: calc(1.5rem + 4px );
@@ -49,8 +56,8 @@
     }
     &_title{
         font-weight: 600;
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 2rem;
+        line-height: 2.75rem;
         margin: 0;
         &::before{
             content: '';
