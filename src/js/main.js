@@ -16,6 +16,11 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
+fetch("https://api.github.com/users/dkasyan/repos")
+  .then(resp => resp.json())
+  .then(resp => {
+    console.log(resp)
+  })
 
 console.log(`Hello world!`);
 
